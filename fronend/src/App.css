@@ -1,0 +1,92 @@
+/* App.css */
+.app-header {
+  display: flex;
+  justify-content: space-between; /* This already aligns items to start and end */
+  align-items: center;
+  padding: 0 20px;
+  background-color: #343a40;
+  margin-bottom: 20px;
+}
+
+.menu-logo {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.menu li a:hover,
+.menu li a:focus {
+  background-color: #555;
+  color: white;
+}
+
+/* Responsive Styles */
+/* Hide the toggle button on screens wider than 768px */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Default style for menu: visible */
+.menu {
+  display: flex;
+}
+.custom-file-upload {
+  display: inline-block;
+  padding: 12px 24px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.custom-file-upload:hover,
+.custom-file-upload:focus {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  /* Show the toggle button on small screens */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Hide the menu by default on smaller screens */
+  .menu {
+    display: none;
+  }
+
+  /* Show the menu when it is toggled */
+  .menu.show {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  /* Additional styles to ensure the menu and items look good on small screens */
+  .menu li {
+    margin: 10px 0;
+  }
+}

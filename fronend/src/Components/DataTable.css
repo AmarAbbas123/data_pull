@@ -1,0 +1,129 @@
+/* DataTable.css */
+
+.data-table {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.data-table h2 {
+  text-align: center;
+}
+
+.data-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table table,
+.data-table th,
+.data-table td {
+  border: 1px solid #ddd;
+}
+
+.data-table th,
+.data-table td {
+  text-align: left;
+  padding: 8px;
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.page-item {
+  margin: 0 5px;
+}
+
+.page-item a {
+  border: 1px solid #007bff;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #007bff;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.page-item a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.page-item.active a {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+/* Disables text selection */
+.page-item a {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+/* DataTable.css */
+
+/* Existing styles */
+
+/* Search input styling */
+/* Existing styles */
+
+/* Right-align the search input using flexbox */
+.search-container {
+  display: flex;
+  justify-content: flex-end; /* Aligns children (the input) to the right */
+  margin-bottom: 10px; /* Maintain spacing below the search box */
+}
+
+/* Continue with existing .search-input and other styles */
+
+.search-input {
+  padding: 8px 12px;
+  border: 1px solid #ddd; /* Light grey border */
+  border-radius: 4px; /* Rounded corners */
+  margin-bottom: 20px; /* Spacing below the search box */
+  width: 250px; /* Fixed width, adjust as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: all 0.3s ease; /* Smooth transition for interactions */
+}
+
+.search-input:focus {
+  outline: none; /* Removes the default focus outline */
+  border-color: #007bff; /* Highlight color when focused */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2); /* Expands the shadow when focused */
+}
+
+/* Adjustments to the pagination for consistency and spacing */
+.pagination {
+  justify-content: center; /* Centers the pagination */
+  padding-top: 20px; /* Spacing above the pagination */
+}
+
+.page-item .page-link {
+  color: #007bff; /* Sets a consistent color for pagination links */
+  transition: color 0.2s ease; /* Smooth color transition on hover/focus */
+}
+
+.page-item .page-link:hover,
+.page-item .page-link:focus {
+  color: #0056b3; /* Darker color on hover/focus for better contrast */
+  text-decoration: none; /* Removes underline on hover/focus */
+}
+/* Styles for the table header */
+.table-header {
+  display: flex; /* Enables flexbox */
+  justify-content: space-between; /* Aligns children to each end */
+  align-items: center; /* Centers items vertically */
+  margin-bottom: 20px; /* Adds some space below the header */
+}
+
+/* Existing styles for .search-input */
+
+/* Ensure .data-table has appropriate padding if not already set */

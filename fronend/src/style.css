@@ -1,0 +1,5 @@
+/* CsvTable.css */
+.table th,
+.table td {
+  border: 1px solid #dee2e6 !important; /* Ensure borders are as you like */
+}
